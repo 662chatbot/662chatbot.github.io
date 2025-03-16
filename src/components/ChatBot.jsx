@@ -31,7 +31,7 @@ function ChatBot(props) {
     [
       "start",
       [
-        "Xin chào! Đây là 662Chatbot, trợ lý ảo chuyên cung cấp thông tin về bảo hiểm xã hội và pháp luật! Bạn muốn tìm hiểu về vấn đề gì? Hãy đặt câu hỏi để mình có thể giúp bạn tìm kiếm thông tin chính xác nhất nhé. 😄",
+        "Xin chào! Đây là , trợ lý ảo chuyên cung cấp thông tin về bảo hiểm xã hội và pháp luật! Bạn muốn tìm hiểu về vấn đề gì? Hãy đặt câu hỏi để mình có thể giúp bạn tìm kiếm thông tin chính xác nhất nhé. 😄",
         null,
       ],
     ],
@@ -62,7 +62,7 @@ function ChatBot(props) {
     SetPromptInput("");
 
     try {
-      const response = await fetch(`https://103.77.241.42/rag?q=${promptInput}`, {
+      const response = await fetch(`https://662chatbot.fumi.fyi/rag?q=${promptInput}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

@@ -100,22 +100,7 @@ function ChatBot(props) {
     url: "",
     text: ``,
   });
-  const handleReferenceClick = (sources, sourceType) => {
-    SetReference({
-      title:
-        sourceType == "wiki"
-          ? sources.metadata.title
-          : sources.metadata.page == undefined ? "Sổ tay sinh viên 2023" : "Trang " + sources.metadata.page + " (sổ tay SV)",
-      source: sourceType == "wiki" ? "Wikipedia" : "Đại học Nguyễn Tất Thành",
-      url:
-        sourceType == "wiki"
-          ? sources.metadata.source
-          : "https://ctsv.ntt.edu.vn/sinh-vien-can-biet/",
-      text:
-        sourceType == "wiki" ? sources.metadata.summary : sources.page_content,
-    });
-  };
-  return (
+  
     <div className="bg-gradient-to-r from-blue-50 to-purple-100 h-[85vh] ">
       <div className="hidden lg:block  drawer-side absolute w-64 h-[20vh] left-3 mt-2 drop-shadow-md">
       </div>
